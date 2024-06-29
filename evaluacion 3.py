@@ -110,5 +110,25 @@ def salir():
     print("Gonzalez Alexander y Urzua Cristian")
     print("Versión: 1.0")
     exit()
+    
+def menu():
+    while True:
+        print("\n**** Menú Automotora 'auto seguro' ****")
+        print("1. Grabar")
+        print("2. Buscar")
+        print("3. Imprimir certificados")
+        print("4. Salir")
+        opcion = input("Seleccione una opción: ")
+        if opcion == "1":
+            grabauto()
+        elif opcion == "2":
+            busauto()
+        elif opcion == "3":
+            impcert()
+        elif opcion == "4":
+            salir()
+        else:
+            print("Opción no válida. Intente nuevamente.")
 
+menu()
 
